@@ -9,7 +9,7 @@ body {
 }
 @font-face {
   font-family: 'Avenir Next';
-  src: url('Avenir Next Medium.otf')
+  src: url('Avenir Next Medium.otf');
 }
 a {color: #43948e;}
 .backtomenu {
