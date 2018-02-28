@@ -111,6 +111,13 @@ th {
   padding:15px;
 }
 
+
+/*  INSPIRATIONAL QUOTE  */
+.classquote {
+  clear:both;
+  padding-bottom:50px;
+}
+
 /*  for the image size  */
 .imgsize {
   width:55%; 
