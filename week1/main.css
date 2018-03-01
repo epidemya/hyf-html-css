@@ -59,6 +59,9 @@ span {
   border-style: hidden; 
   margin-top: 40px;          
 }
+#cattable th:first-child, td:first-child {
+  text-align:left;
+}
 .center {
   text-align: center;
   font-family: 'Avenir Next', Arial, sans-serif;
@@ -71,6 +74,7 @@ span {
   font-family: 'Avenir Next', Arial, sans-serif;
 }
 
+
 /*  Quotation Part  */
 .cquote {
   background-color:#f7f6f4;
@@ -79,6 +83,9 @@ span {
   font-family:Times, serif;
   font-size: 33px;
   color: black;
+}
+.cquote p {
+  text-align:right;
 }
 
 /*  Navigation part */
