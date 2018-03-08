@@ -9,7 +9,7 @@ body {
 p {
   font-size: 1.2em;
   text-align: left;
-  line-height: 1.3em;
+  line-height: 1.6em;
   color: #818181;
 }
 
@@ -166,6 +166,10 @@ footer a, footer p{
   .navigation li {
     float: none;
   }
+  .navigation ul {
+    line-height: 10px;
+  }
+
   .logotypes-container img {
     width: 50%;
     height: 50%;
@@ -174,5 +178,8 @@ footer a, footer p{
   footer.flex-container {
     width: 100%;
     padding: 0;
+  }
+  p {
+    line-height: 1.2em;
   }
 }
