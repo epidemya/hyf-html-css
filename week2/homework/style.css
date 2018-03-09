@@ -85,18 +85,22 @@ aside {
   width: 44%;
   padding-top: 0;
   padding-right: 3%;
+  order: 1;
 }
 article {
   width: 50%;
+  order: 2;
 }
 .galleryclass {
   width: 44%;
   padding-right: 3%;
   padding-top: 40px;
+  order:3;
 }
 .logotypes {
   width: 50%; 
   padding-top: 40px; 
+  order:4;
 }
 .logotypes-container img {
   width: 25%;
