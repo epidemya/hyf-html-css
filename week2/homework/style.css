@@ -6,12 +6,21 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*  font sizes */
 p {
   font-size: 1.2em;
   text-align: left;
   line-height: 1.6em;
   color: #818181;
 }
+aside p {
+  font-size: 1em;
+}
+.galleryclass p {
+  font-size: 1em;
+}
+
 
 /*  Left padding  */
 header, .navigation, aside, .galleryclass, footer{
