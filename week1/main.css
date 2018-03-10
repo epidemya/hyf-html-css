@@ -1,5 +1,5 @@
 body {
-  font-family: 'Avenir Next', Arial, sans-serif;  
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.0em; 
   width:800px;
   margin-left: auto;
@@ -8,16 +8,10 @@ body {
   color:#594b3a;
 }
 
-/*  for the special font Avenir Next  */
-@font-face {
-  font-family: 'Avenir Next';
-  src: url('Avenir Next Medium.otf');
-}
-
 /*  header part */
 .headerdidot {
   text-align:center;
-  font-size:35px; 
+  font-size: 1.2em; 
   font-family: 'GFS Didot', serif;
 }
 
@@ -31,62 +25,9 @@ hr {
 }
 .hr2 {
   border:solid 2px;
+  margin-bottom: 5em;
 }
 
-
-/*  back to menu span font size */
-.spanmenu {
-  font-size:0.5em;
-}
-a {
-  color: #43948e;
-}
-span {
-  vertical-align:middle;
-}
-
-/*  paragraph title  */
-.ptitle {
-  text-align: center;
-  font-weight:normal;
-}
-
-#cattable {
-  font-family: 'Avenir Next', Arial, sans-serif;
-  width: 100%;
-  text-align: right;
-  border-collapse: collapse; 
-  border-style: hidden; 
-  margin-top: 40px;          
-}
-#cattable th:first-child, td:first-child {
-  text-align:left;
-}
-.center {
-  text-align: center;
-  font-family: 'Avenir Next', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.3em;
-  padding-top:60px;
-}
-.content {
-  font-size: 1.3em; 
-  font-family: 'Avenir Next', Arial, sans-serif;
-}
-
-
-/*  Quotation Part  */
-.cquote {
-  background-color:#f7f6f4;
-  padding:20px;
-  font-style:italic;
-  font-family:Times, serif;
-  font-size: 33px;
-  color: black;
-}
-.cquote p {
-  text-align:right;
-}
 
 /*  Navigation part */
 li {
@@ -100,9 +41,67 @@ ol {
   color: #43948e;
 }
 
+
+/*  back to menu nav shorcut */
+a {
+  color: #43948e;
+}
+span a {
+  font-size: 0.5em;
+  vertical-align: middle;
+  text-decoration: none;  
+}
+
+
+/*  text formatting for the articles */
+.center {
+  text-align: center;
+  vertical-align: middle;
+}
+article p {
+  font-size: 1em;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.5em;   
+}
+article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.justifyright {
+  text-align: right;
+}
+
+/*  Quotation section  */
+.classquote {
+  clear: both;
+  margin-top: 300px;
+  padding-bottom:50px;
+}
+blockquote {
+  width: 90%;
+  background-color: #f0f0f0;
+  padding: 40px;
+  margin: 0;
+  font-style:italic;
+  font-family: Times, serif;
+  font-size: 2em;
+  color: black;
+}
+
 /*  Population of Cats  */
-.tabledashed {
-  border-style: dotted; 
+.cattable {
+  width: 100%;
+  text-align: right;
+  border-collapse: collapse; 
+  border-style: hidden; 
+  margin-top: 40px;          
+}
+.cattable th:first-child, td:first-child {
+  text-align:left;
+}
+.cattable tr:nth-child(even) {
+  border-style: dashed; 
   background-color:#f1f0ee; 
   border-color:#acacac
 }
@@ -118,12 +117,6 @@ th {
   padding:15px;
 }
 
-
-/*  INSPIRATIONAL QUOTE  */
-.classquote {
-  clear:both;
-  padding-bottom:50px;
-}
 
 /*  for the image size  */
 .imgsize {
