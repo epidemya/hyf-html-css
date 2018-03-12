@@ -100,7 +100,7 @@ ul.simple-tabs li.active {
 
 @media all and (max-width: 700px) {
   .container {  
-    width: 500px;    
+    width: 450px;    
     height: auto;
   }
   .grid-container {
