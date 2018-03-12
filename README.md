@@ -6,4 +6,4 @@ HackYourFuture Class05 Repository for Richard Paredes
 - https://paredesrichard.github.io/hyf-html-css/week2/hands-on-01/
 - https://paredesrichard.github.io/hyf-html-css/week2/hands-on-02/
 - https://paredesrichard.github.io/hyf-html-css/week2/homework/
-
+- https://paredesrichard.github.io/hyf-html-css/week3/booking-example/
