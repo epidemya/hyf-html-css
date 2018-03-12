@@ -105,11 +105,11 @@ ul.simple-tabs li.active {
     font-size: 0.6em;
   }
   .container {  
-    width: 360px;    
+    width: 355px;    
     height: auto;
   }
   input[type=text], input[type=date] {
-    padding: 0.5rem; 
+    padding: 0.7rem; 
   }
   .grid-container {
     display: grid;
@@ -118,7 +118,7 @@ ul.simple-tabs li.active {
     grid-gap: 5px;
     height: 100%;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     justify-content: space-between;
   }
   .leftcolumn {
@@ -128,7 +128,7 @@ ul.simple-tabs li.active {
     grid-column: 1 / 5;
   }
   .submitbutton {
-    padding: 5px 10px;
+    padding: 20px 30px;
   }
   select {
     padding: 0.2rem;
