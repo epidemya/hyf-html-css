@@ -44,7 +44,7 @@ ul.simple-tabs {
 input[type=text], input[type=date] {
   padding: 1em; 
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 select {
   padding: 0.5em;
@@ -94,28 +94,43 @@ ul.simple-tabs li:hover, ul.simple-tabs li:active {
 }
 ul.simple-tabs li.active {
   background-color: #f37100;
-  color:#ffffff;
-  
+  color:#ffffff;  
 }
 
 @media all and (max-width: 700px) {
+  .container p {
+    font-size: 2rem;
+  }
+  ul.simple-tabs li {
+    font-size: 0.6em;
+  }
   .container {  
-    width: 450px;    
+    width: 360px;    
     height: auto;
+  }
+  input[type=text], input[type=date] {
+    padding: 0.5rem; 
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);  
-    grid-gap: 20px;
+    grid-gap: 5px;
     height: 100%;
     align-items: center;
     padding: 20px;
+    justify-content: space-between;
   }
   .leftcolumn {
     grid-column: 1 / 5;
   }
   .rightcolumn {
     grid-column: 1 / 5;
+  }
+  .submitbutton {
+    padding: 5px 10px;
+  }
+  select {
+    padding: 0.2rem;
   }
 }
