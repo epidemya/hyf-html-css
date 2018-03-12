@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input {
+        padding: 10px;
+        margin: 10px;
+      }
+      form {
+        margin: auto;
+        width:500px;
+      }
+      .container {
+        background-color :aquamarine;
+        width: 500px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div>
+          <label for="name">Name:</label>
+        <input required type="text" id="name" name="user_name" placeholder="type your name here...">
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input required type="text" id="email" name="user_mail" placeholder="type your email here...">
+      </div>
+      <div>
+        <label for="msg">Message:</label>
+        <textarea required name="user_message" id="msg" cols="30" rows="10" placeholder="type your message here..."></textarea>
+      </div>
+      <button>Send</button>
+    </form>
+  </div>
+  </body>
+</html>

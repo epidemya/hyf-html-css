@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabbed Layout Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="Layout exercise">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+<body>
+  <main class="container">
+    <p>Book Your Best Trip</p>
+    <nav>
+      <ul class="simple-tabs" id="example-tabs">
+        <li class="hotels active"><span class="glyphicon glyphicon-home"></span> Hotels</li>
+        <li class="flights"><span class="glyphicon glyphicon-plane"></span> Flights</li>
+        <li class="cars"><span class="fa fa-car"></span> Cars</li>
+        <li class="dest"><span class="glyphicon glyphicon-map-marker"></span> Destinations</li>
+      </ul>
+    </nav>
+
+
+    <div id="hotels" class="tab-page active-page">
+      <form class="grid-container">
+        <div class="fullcolumn">
+          <label class="labels" for="destination-city">Destination City or Hotel</label>
+          <input class="glyphicon" type="text" id="destination-city" name="destination city" placeholder="&#xe062; Destination city or Hotel..." required>
+        </div>  
+        <div class="leftcolumn">
+          <label class="labels" for="check-in">Check In</label>
+          <input type="date" id="check-in" name="check in" required>
+        </div>
+        <div class="rightcolumn">
+          <label class="labels" for="check-out">Check Out</label>
+          <input type="date" id="check-out" name="check out" required>          
+        </div>
+        <div>
+          <label class="labels" for="adults">Adults (18+)</label>
+          <select class="0-10" id="adults" name="adult count"></select>
+        </div>
+        <div>
+          <label class="labels" for="childcount">Child (0-17)</label>
+          <select class="0-10" id="childcount" name="child count"></select>
+        </div>
+        <div class="rightcolumn">
+          <label class="labels" for="flightclass" >Class</label>
+          <select id="flightclass">
+            <option value="fc">First Class</option>
+            <option value="bc">Bussiness Class</option>
+            <option value="ec" selected>Economy Class</option> 
+          </select>
+        </div>
+        <div>
+          <button class="submitbutton">Submit</button>
+        </div>
+        <div>
+          <input class="submitbutton" type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+      
+    
+    <div id="flights" class="tab-page">
+      <form class="grid-container">
+        <div class="leftcolumn">
+          <label class="labels" for="origin">Origin</label>
+          <input class="glyphicon" type="text"  id="origin" name="origin" placeholder="&#xe062; Origin city or airport" required>
+        </div>  
+        <div class="rightcolumn">
+          <label class="labels" for="destination">Destination</label>
+          <input class="glyphicon" type="text" id="destination" name="destination" placeholder="&#xe062; Destination city or airport" required>
+        </div>
+        <div class="leftcolumn">
+          <label class="labels" for="departure">Departure</label>
+          <input type=date id="departure" name="departure" required>          
+        </div>
+        <div class="rightcolumn">
+          <label class="labels" for="return">Return</label>
+          <input type="date" id="return" name="return" required> 
+        </div>
+        <div>
+          <label class="labels" for="traveller">Traveller</label>
+          <select class="0-10" id="traveller" name="traveller"></select>
+        </div>
+        <div>
+          <label class="labels" for="childrencount" >Children (0-17)</label>
+          <select class="0-10" id="childrencount"></select> 
+        </div>
+        <div class="rightcolumn">
+          <label class="labels" for="flightclass2" >Class</label>
+          <select id="flightclass2">
+            <option value="fc">First Class</option>
+            <option value="bc">Bussiness Class</option>
+            <option value="ec" selected>Economy Class</option> 
+          </select>
+        </div>
+        <div>
+          <button class="submitbutton">Submit</button>
+        </div>
+        <div>
+          <input class="submitbutton" type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+    
+    <div id="cars" class="tab-page">
+      <form class="grid-container">
+        <div class="leftcolumn">
+          <label class="labels" for="pickuploc">Pick up location</label>
+          <input class="glyphicon" type="text"  id="pickuploc" name="Pickup location" placeholder="&#xe062; Pick Up Location" required>
+        </div>  
+        <div class="rightcolumn">
+          <label class="labels" for="dropoffloc">Drop off location</label>
+          <input class="glyphicon" type="text" id="dropoffloc" name="drop off location" placeholder="&#xe062; Drop Off Location" required>
+        </div>
+        <div class="leftcolumn">
+          <label class="labels" for="pickupdate">Pick Up Date</label>
+          <input type="date" id="pickupdate" name="pick up date" required>          
+        </div>
+        <div class="rightcolumn">
+          <label class="labels" for="dropoffdate">Drop Off Date</label>
+          <input type="date" id="dropoffdate" name="drop off date" required> 
+        </div>
+        <div>
+          <button class="submitbutton">Search Cars</button>
+        </div>
+        <div>
+          <input class="submitbutton" type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+
+    <div id="dest" class="tab-page">
+      <form class="grid-container">
+        <div class="fullcolumn">
+          <label class="labels" for="destination2">Destination</label>
+          <input class="glyphicon" type="text"  id="destination2" name="Destination" placeholder="&#xe062; City, Region Or Country" required>
+        </div>  
+        <div>
+          <button class="submitbutton">Reach Destinations</button>
+        </div>
+        <div>
+            <input class="submitbutton" type="reset" value="Reset">
+          </div>
+      </form>
+    </div>
+    
+  </main>
+
+<script src="js/simple-tabs-pure-js.min.js"></script>
+
+<script>
+    /*
+     * Initialize the tabs on window to ensure the page is drawn when you init,
+     * you may also move the script tags to the end of the body to ensure the element is present when the
+     * plugin is called.
+     */
+    window.onload = function () {
+        var div = document.getElementById('example-tabs');
+        var exampleTabs = new SimpleTabs(div);
+    };
+
+/*  JQuery to populate the select drop down tags  */
+
+$(function(){
+    var $select = $(".0-10");
+    for (i=0;i<=10;i++){
+        $select.append($('<option></option>').val(i).html(i))
+    }
+});
+
+</script>
+
+</body>
+</html>

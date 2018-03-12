@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+.container {  
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-image: url("https://hdwallsource.com/img/2014/9/beautiful-sea-foam-wallpaper-39428-40337-hd-wallpapers.jpg"); 
+  background-size: auto; 
+  background-repeat: no-repeat;
+}
+
+.container  p {
+  text-align: center;
+  font-size: 4rem;
+  color: #f37100;
+}
+
+.fullcolumn {  
+  grid-column: 1 / 5;
+}
+.leftcolumn {  
+  grid-column: 1 / 3;
+}
+.rightcolumn {
+  grid-column: 3 / 5;
+}
+
+ul.simple-tabs {
+  max-width: 100%;
+}
+.tab-page {
+  margin-top: 60px;
+  max-width: 100%;
+  height: 80%;
+}
+input[type=text], input[type=date] {
+  padding: 1em; 
+  width: 100%;
+  border-radius: 10px;
+}
+select {
+  padding: 0.5em;
+}
+ul.simple-tabs li {
+  background-color: white;
+  height: 50px;
+  vertical-align: middle;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);  
+  grid-gap: 20px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+form label {
+  display: block;
+}
+/*
+form p {
+  margin: 0;
+}
+*/
+.submitbutton {
+  background-color:#7b96d1;
+  border: none;
+  color: white;
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1.6rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  align-items: center;
+}
+.submitbutton:hover {
+  background-color: steelblue; 
+}
+ul.simple-tabs li:hover, ul.simple-tabs li:active {
+  background-color: #975a39;
+}
+ul.simple-tabs li.active {
+  background-color: #f37100;
+  color:#ffffff;
+  
+}
+
+@media all and (max-width: 700px) {
+  .container {  
+    width: 500px;    
+    height: auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);  
+    grid-gap: 20px;
+    height: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+  .leftcolumn {
+    grid-column: 1 / 5;
+  }
+  .rightcolumn {
+    grid-column: 1 / 5;
+  }
+}
