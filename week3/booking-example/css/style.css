@@ -110,6 +110,7 @@ ul.simple-tabs li.active {
   }
   input[type=text], input[type=date] {
     padding: 0.7rem; 
+    border-radius: 0;
   }
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
