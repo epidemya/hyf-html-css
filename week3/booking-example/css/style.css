@@ -133,4 +133,18 @@ ul.simple-tabs li.active {
   select {
     padding: 0.2rem;
   }
+  .navlabels {
+    height   : 1px;
+    width    : 1px;
+    position : absolute;
+    overflow : hidden;
+    top      : -1000px;
+  }
+  span {
+    font-size: 2rem;
+    vertical-align: middle;
+  }
+  ul.simple-tabs li {
+    font-size: 2rem;
+  }
 }
