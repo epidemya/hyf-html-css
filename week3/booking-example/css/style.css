@@ -112,12 +112,9 @@ ul.simple-tabs li.active {
     padding: 0.7rem; 
   }
   .grid-container {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);  
     grid-gap: 5px;
-    height: 100%;
-    align-items: center;
     padding: 10px;
     justify-content: space-between;
   }
